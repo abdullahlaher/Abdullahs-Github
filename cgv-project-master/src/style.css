@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+  margin: 0;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+  height: 100vh;
+  width: 100wh;
+}
+.loading-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.menuHeading {
+  font-size: 180%;
+  font-weight: bold;
+  font-family: 'Press Start 2P';
+  padding: 4%;
+  color: #ffc600;
+  text-align: center;
+}
+.creditsText {
+  font-size: 50%;
+  font-family: 'Raleway';
+  color: #ffc600;
+  text-align: center;
+  padding: 2%;
+}
+.onScreenText {
+  font-size: 140%;
+  font-family: 'Press Start 2P';
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+  padding: 2%;
+  color: white;
+  backdrop-filter: blur(1px);
+}
+.logo {
+  width: 32px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.menuButtons {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Raleway';
+  line-height: 1;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 3%;
+  padding: 2%;
+  width: 100%;
+  background: #37e0e0;
+  color: #fff;
+  border-bottom: 5px solid #ffc600;
+}
+.pauseButton {
+  border: 0;
+  cursor: pointer;
+  font-size: 140%;
+  font-weight: bolder;
+  padding: 2%;
+  font-family: 'Press Start 2P';
+  text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+  text-decoration: none;
+  line-height: 1;
+  position: static;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+progress {
+  border-radius: 7px;
+  height: 22px;
+  margin-left: 15%;
+}
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: #37e0e0;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px 3px  #ffc600;
+}

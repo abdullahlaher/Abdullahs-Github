@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekasi Vibes</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100wh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading" class="center">
+      <div class="lds-hourglass"></div>
+      <p id="loading-text" class="loading-text">Filling up petrol...</p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
